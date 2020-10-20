@@ -1,15 +1,15 @@
 pkgname=python-magics
-pkgver=1.5.2
+pkgver=1.5.3
 pkgrel=1
 pkgdesc="magics++ python module"
 arch=(any)
 license=('APACHE')
-depends=('python','magics++')
+depends=('python' 'magics++')
 makedepends=('python-setuptools')
 # the blake2-256 is actually part of the link: 
-source=("https://files.pythonhosted.org/packages/53/7c/9127b4373219da1dc725f01b55d75a84e4213152379e5ac6634a03fd7fba/Magics-$pkgver.tar.gz")
+source=("https://files.pythonhosted.org/packages/b9/a5/59c2776235987a898c1f8c265268be31590d78245bbfcf879409f267991c/Magics-$pkgver.tar.gz")
 # can also do md5 sum, this shuould be enough 
-sha256sums=('20f6a331b3ffa5c0460fe9273b4d9a32db8a95936759736bef0e393ac1b3817b')
+sha256sums=('b0e2da0ec005c3628c66e51f7ba5fbc047e6198ff523d485edf02ffa125c81b6')
 
 build() {
     cd "$srcdir"/Magics-$pkgver
